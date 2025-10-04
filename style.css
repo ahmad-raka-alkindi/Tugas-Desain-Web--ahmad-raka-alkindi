@@ -1,0 +1,389 @@
+:root {
+    --primary-color: #007bff;
+    --primary-hover: #0056b3;
+    --text-color: #333;
+    --light-bg: #f4f7f6;
+    --card-bg: #ffffff;
+    --dark-navbar: #34495e;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s;
+}
+
+.navbar {
+    background-color: var(--dark-navbar);
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: var(--primary-hover);
+    color: white;
+}
+
+.navbar a.active {
+    background-color: var(--primary-color);
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 25px;
+}
+
+p, ul, ul li {
+    color: var(--text-color);
+}
+
+body.about-page {
+    background-color: var(--light-bg);
+}
+
+body.about-page h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--light-bg);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.profile-section {
+    margin-bottom: 30px;
+    margin-top: 20px; 
+}
+
+.container .profile-section:first-child {
+    margin-top: 0;
+}
+
+.profile-section h2 {
+    margin-top: 0; 
+}
+
+
+.info-box {
+    background-color: #fcfcfc;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border: 1px solid #eee;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.skill-item {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.08);
+}
+
+.personal-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.info-text {
+    flex: 1;
+    min-width: 200px;
+}
+
+.info-photo {
+    flex-shrink: 0;
+}
+
+body.home-page {
+    background-image: url('WhatsApp Image 2025-09-13 at 22.03.16.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+}
+
+body.home-page .navbar {
+    background-color: var(--dark-navbar);
+}
+
+body.home-page .container {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+}
+
+body.home-page h1,
+body.home-page h2 {
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+}
+
+body.home-page p,
+body.home-page .container ul li {
+    color: #eee;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro-text {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.container > div:last-child {
+    background-color: rgba(249, 249, 249, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+body.contact-page {
+    background-image: url('WhatsApp Image 2025-09-13 at 22.19.54.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+}
+
+body.contact-page .container {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+body.contact-page h1,
+body.contact-page h2 {
+    color: var(--text-color);
+}
+
+body.contact-page p,
+body.contact-page ul,
+body.contact-page ul li,
+body.contact-page ul li a {
+    color: var(--text-color);
+}
+
+body.contact-page ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+body.contact-page ul li {
+    margin-bottom: 10px;
+}
+
+body.contact-page ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+body.contact-page ul li a:hover {
+    text-decoration: underline;
+}
+
+form {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.radio-group label {
+    font-weight: normal;
+    display: inline;
+    margin-right: 15px;
+}
+
+.radio-group div {
+    margin-top: 5px;
+}
+
+.submit-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: var(--primary-hover);
+}
+
+.experience-item h3 {
+    color: var(--primary-hover);
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.experience-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.experience-item a:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.container .profile-section {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.container .profile-section:first-child {
+    margin-top: 0;
+}
+
+.profile-section h2 {
+    margin-top: 0; 
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+    
+    .personal-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info-text {
+        text-align: center;
+    }
+
+    .submit-button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+        gap: 10px;
+    }
+    
+    .gallery img {
+        height: 100px;
+    }
+}

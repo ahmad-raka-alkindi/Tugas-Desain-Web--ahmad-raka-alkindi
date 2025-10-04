@@ -1,0 +1,21 @@
+{
+    "name": "Website Ahmad Raka Alkindi - PWA",
+    "short_name": "Raka PWA",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "description": "Website portofolio sederhana mahasiswa informatika, kini sebagai Progressive Web App.",
+    "icons": [
+        {
+            "src": "icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
