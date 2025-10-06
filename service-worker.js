@@ -1,4 +1,4 @@
-const CACHE_NAME = 'raka-pwa-cache-v11';
+const CACHE_NAME = 'raka-pwa-cache-v12';
 const urlsToCache = [
     '/',
     '/index.html',
